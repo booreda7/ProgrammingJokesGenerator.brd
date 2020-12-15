@@ -4,8 +4,12 @@
   padding: 0;
 }
 .parent {
+  display: flex;
   height: 100vh;
   border: 10px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .child1 {
   height: 200px;
