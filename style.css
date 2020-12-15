@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  height: 100vh;
+  border: 20px solid black;
+}
+.child1 {
+  height: 200px;
+  width: 200px;
+  background-color: lightsalmon;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  background-color: lightgreen;
+}
+.child3 {
+  height: 200px;
+  width: 200px;
+  background-color: lightskyblue;
+}
