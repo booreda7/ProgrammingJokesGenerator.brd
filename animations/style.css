@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0ch;
+  padding: 0;
+}
+.move {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+#cars {
+  padding: 2px;
+}
+input,
+select,
+option,
+label {
+  margin: 5px;
+}
+fieldset {
+  position: relative;
+  left: 10px;
+}
