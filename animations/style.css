@@ -4,64 +4,70 @@
   padding: 0;
 }
 body {
-  background: #333;
+  background-image: url("img2.jpg");
+  color: white;
+  text-align: center;
+  line-height: 1.6;
 }
-.box {
-  background-color: white;
-  width: 200px;
-  height: 200px;
+.container {
   position: relative;
-  animation-name: ananimation;
-  animation-duration: 4s;
-  animation-iteration-count: 2;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 30px;
+  padding: 0 30px;
+  animation-name: myanimation2;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
-@keyframes ananimation {
-  0% {
-    background-color: white;
-    left: 0px;
-    top: 0px;
-    border-radius: 0 0 0 0;
-  }
-  25% {
-    background-color: red;
-    left: 200px;
-    top: 0;
-    border-radius: 50% 0 0 0;
-  }
-
-  50% {
-    background-color: lightseagreen;
-    left: 0px;
-    top: 200px;
-    border-radius: 50% 50% 0 0;
-  }
-  75% {
-    background-color: purple;
-    left: 200px;
-    top: 200px;
-    border-radius: 50% 50% 50% 0;
-  }
-
-  100% {
-    background-color: black;
-    top: 0px;
-    left: 0px;
-    border-radius: 50% 50% 50% 50%;
-  }
-}
-.box2 {
+.showcase {
   position: relative;
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  top: 500px;
-  left: 300px;
-  transition-property: background-color, border-radius, transform;
-  transition-duration: 3s, 1s;
+  height: 300px;
+  animation-name: myanimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
-.box2:hover {
-  background-color: lightseagreen;
-  border-radius: 50%;
+@keyframes myanimation {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@keyframes myanimation2 {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 00px;
+  }
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  top: 50px;
+  border: 2px solid white;
+  padding: 10px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.btn:hover {
   transform: rotateY(180deg);
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
