@@ -57,10 +57,10 @@ body {
   animation-fill-mode: forwards;
 
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 2s;
 }
 .btn:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 @keyframes btn {
@@ -69,5 +69,20 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 326px) {
+  .container {
+    top: 50px;
+  }
+}
+@media screen and (max-width: 160px) {
+  .container {
+    top: 70px;
+  }
+}
+@media screen and (max-width: 110px) {
+  .container {
+    top: 90px;
   }
 }
