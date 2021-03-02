@@ -1,0 +1,22 @@
+{
+  "name": "vs-code",
+  "version": "1.0.0",
+  "description": "firstproject",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d jss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booreda7/learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/booreda7/learning/issues"
+  },
+  "homepage": "https://github.com/booreda7/learning#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

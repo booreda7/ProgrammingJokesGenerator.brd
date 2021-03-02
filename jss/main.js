@@ -1,15 +1,16 @@
- function Person(firstname, lastname, dob){
-     this.firstname=firstname;
-     this.lastname=lastname;
-     this.dob=new Date(dob);
- }
- const person1 = new Person ('john','doe','1-2-2000');
- console.log(person1);
+const jokeText = document.getElementById('joke')
+const button = document.getElementById('jokebtn')
 
+button.addEventListener('click', theJoke)
 
-
-
-
-
-
-
+async function theJoke(){
+    const res = await fetch('https://v2.jokeapi.dev/joke/Programming')
+    const data = await res.json();
+    let joke = "";
+    if(data.joke == undefined){
+        joke = `${data.setup} <br /> ${data.delivery}`
+    }else{
+        joke = data.joke
+    }
+    jokeText.innerHTML=joke
+}
