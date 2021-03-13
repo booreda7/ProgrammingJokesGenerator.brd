@@ -1,1 +1,1 @@
-This is a website for programming jokes.
+This is a website for programming jokes
